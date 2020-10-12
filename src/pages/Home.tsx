@@ -38,7 +38,7 @@ const ButtonText = styled.Text`
   font-weight: bold;
 `
 
-const Ambed = styled(InstagramEmbed)`
+const Embed = styled(InstagramEmbed)`
   width: 100%;
   margin-bottom: 10px;
 `
@@ -77,9 +77,10 @@ const Home = () => {
 
   return (
     <Wrapper>
-      {!!url ? <Ambed showAvatar id={url} /> : <AmbedWrapper />}
+      {/* @ts-ignore */}
+      {!!url ? <Embed showAvatar id={url} /> : <AmbedWrapper />}
       <Input onChangeText={onValidadeURL} placeholder="URL do post" />
-      <Button onPress={onSort}>
+      <Button disabled={loading} onPress={onSort}>
         <ButtonText>
           {loading ? <Activity color="white" /> : 'Sortear'}{' '}
         </ButtonText>

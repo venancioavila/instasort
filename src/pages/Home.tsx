@@ -9,8 +9,7 @@ import { Linking } from 'react-native'
 const Wrapper = styled.View`
   flex: 1;
   background: #2c3e50;
-  align-items: center;
-  padding: 10px;
+  
 `
 const Input = styled.TextInput`
   width: 100%;
@@ -47,6 +46,18 @@ const AmbedWrapper = styled.View`
   height: 300px;
 `
 
+const Scrool = styled.ScrollView`
+height: 100%;
+width: 100%;
+`;
+
+const Content = styled.View`
+height: 100%;
+width: 100%;
+align-items: center;
+  padding: 10px;
+`;
+
 const Activity = styled.ActivityIndicator``
 
 const Home = () => {
@@ -77,6 +88,8 @@ const Home = () => {
 
   return (
     <Wrapper>
+      <Scrool>
+        <Content>
       {/* @ts-ignore */}
       {!!url ? <Embed showAvatar id={url} /> : <AmbedWrapper />}
       <Input onChangeText={onValidadeURL} placeholder="URL do post" />
@@ -85,7 +98,9 @@ const Home = () => {
           {loading ? <Activity color="white" /> : 'Sortear'}{' '}
         </ButtonText>
       </Button>
-    </Wrapper>
+      </Content>
+      </Scrool>
+      </Wrapper>
   )
 }
 

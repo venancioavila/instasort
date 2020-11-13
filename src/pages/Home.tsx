@@ -44,7 +44,7 @@ const Post = styled(WebView)`
 `
 
 const AmbedWrapper = styled.View`
-  height: 550px;
+  height: 500px;
   width: 100%;
   margin-bottom: 10px;
   border-radius: 10px;

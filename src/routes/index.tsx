@@ -14,6 +14,7 @@ function Routes() {
             headerStyle: {
               backgroundColor: '#2c3e50',
               borderWidth: 0,
+              shadowColor: 'transparent',
             },
             headerTintColor: '#fff',
             headerTitleStyle: {

@@ -19,6 +19,7 @@ const Input = styled.TextInput`
   box-shadow: 1px 1px 1px black;
   padding-horizontal: 5px;
   margin-bottom: 10px;
+  margin-top: 10px;
 `
 
 const Button = styled.TouchableOpacity`
@@ -43,7 +44,7 @@ const Post = styled(WebView)`
 `
 
 const AmbedWrapper = styled.View`
-  height: 450px;
+  height: 550px;
   width: 100%;
   margin-bottom: 10px;
   border-radius: 10px;

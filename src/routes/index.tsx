@@ -13,6 +13,7 @@ function Routes() {
           options={{
             headerStyle: {
               backgroundColor: '#2c3e50',
+              borderWidth: 0,
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
